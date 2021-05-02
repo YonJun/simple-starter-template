@@ -1,25 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
-
+/** @jsxImportSource @emotion/react */
+// eslint-disable-next-line
+import tw from "twin.macro";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div tw="max-w-4xl mx-auto p-5 mt-5">
+      <h1 tw="text-blue-500 text-4xl">Hello world</h1>
     </div>
   );
 }
-
 export default App;
