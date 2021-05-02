@@ -2,8 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Pragati+Narrow:wght@400;700&display=swap");
 .root,
 #root {
-  --primary: #5c6ac4;
+  --primary: #a276ff;
   --secondary: #ecc94b;
+  font-family: "Pragati Narrow", sans-serif;
 }
