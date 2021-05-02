@@ -1,3 +1,5 @@
+/** @jsxImportSource @emotion/react */
+import tw from "twin.macro";
 import { Fragment } from "react";
 import { Link } from "react-router-dom";
 
@@ -6,13 +8,13 @@ const Sidebar = () => {
     <Fragment>
       <nav>
         <ul>
-          <li>
+          <li tw="bg-primary">
             <Link to="/">Home</Link>
           </li>
-          <li>
+          <li tw="bg-primary">
             <Link to="/about">About</Link>
           </li>
-          <li>
+          <li tw="bg-secondary">
             <Link to="/users">Users</Link>
           </li>
         </ul>

@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import FirstItem from "./pages/FirstItem";
 import Sidebar from "./layouts/Sidebar";
+import "./App.css";
 
 export default function App() {
   return (
