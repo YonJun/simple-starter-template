@@ -1,13 +1,14 @@
+import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import FirstItem from "./pages/FirstItem";
 import Sidebar from "./layouts/Sidebar";
-import "./App.css";
+import Cover from "./components/Cover";
 
 export default function App() {
   return (
     <Router>
-      <div>
+      <Cover>
         <Sidebar />
         <Switch>
           <Route path="/item1">
@@ -20,7 +21,7 @@ export default function App() {
             <h1>404</h1>
           </Route>
         </Switch>
-      </div>
+      </Cover>
     </Router>
   );
 }
