@@ -1,11 +1,25 @@
-/** @jsxImportSource @emotion/react */
-// eslint-disable-next-line
-import tw from "twin.macro";
-function App() {
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import FirstItem from "./pages/FirstItem";
+import Sidebar from "./layouts/Sidebar";
+
+export default function App() {
   return (
-    <div tw="max-w-4xl mx-auto p-5 mt-5">
-      <h1 tw="text-blue-500 text-4xl">Hello world</h1>
-    </div>
+    <Router>
+      <div>
+        <Sidebar />
+        <Switch>
+          <Route path="/item1">
+            <FirstItem />
+          </Route>
+          <Route path="/" exact>
+            <Home />
+          </Route>
+          <Route path="*" exact>
+            <h1>404</h1>
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
-export default App;
