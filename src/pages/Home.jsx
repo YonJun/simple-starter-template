@@ -15,11 +15,21 @@ const Home = () => {
     <Fragment>
       <div tw="pt-40 text-white relative ">
         <div tw="absolute top-0 right-0 bg-primary p-1 rounded-b-lg">
-          <a href="#" tw="inline-block py-2 px-8">
-            <img height="auto" width="100%" src="/assets/images/twitter.svg" />
+          <a href="/#" tw="inline-block py-2 px-8">
+            <img
+              alt="twitter"
+              height="auto"
+              width="100%"
+              src="/assets/images/twitter.svg"
+            />
           </a>
-          <a href="#" tw="inline-block py-2 px-8">
-            <img height="auto" width="100%" src="/assets/images/facebook.svg" />
+          <a href="/#" tw="inline-block py-2 px-8">
+            <img
+              alt="facebook"
+              height="auto"
+              width="100%"
+              src="/assets/images/facebook.svg"
+            />
           </a>
         </div>
         <div tw="font-black">
