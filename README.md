@@ -1,4 +1,4 @@
-# EduEra | Learning plataform
+# Simple starter template
 
 ## Stack
 
