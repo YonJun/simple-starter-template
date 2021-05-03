@@ -1,14 +1,7 @@
 /** @jsxImportSource @emotion/react */
-import tw, { styled } from "twin.macro";
+import tw from "twin.macro";
 import { Fragment } from "react";
-
-const Cover = styled.div`
-  background-image: ${({ srcImg }) => `url("${srcImg}")`};
-  background-repeat: no-repeat;
-  background-position: center center;
-  ${tw`w-full rounded`}
-  height:120px;
-`;
+import Cover from "../components/Cover";
 
 const Home = () => {
   return (
@@ -32,7 +25,7 @@ const Home = () => {
             <div tw="p-1 bg-white rounded-lg">
               <Cover
                 key={index}
-                srcImg={`https://picsum.photos/500/50${index}`}
+                srcImg={`https://picsum.photos/250/25${index}`}
               />
             </div>
           ))}

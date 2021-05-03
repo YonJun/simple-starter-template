@@ -1,6 +1,7 @@
 /** @jsxImportSource @emotion/react */
 import tw, { styled } from "twin.macro";
 import { Fragment } from "react";
+import Cover from "../components/Cover";
 
 const Paragraph = styled.p`
   ${tw`mb-6`}
@@ -55,7 +56,14 @@ const FirstItem = () => {
           ))}
         </div>
 
-        <div tw="col-span-3">image</div>
+        <div tw="col-span-3 relative">
+          <div tw="sticky top-0 left-0">
+            <div tw="p-1 bg-white rounded-lg w-full shadow-2xl">
+              <Cover height={600} srcImg={`https://picsum.photos/500/600`} />
+            </div>
+            <p tw="mt-5 text-center">Photo by Judeus Samson on Unsplash</p>
+          </div>
+        </div>
       </div>
     </Fragment>
   );

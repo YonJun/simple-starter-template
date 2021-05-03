@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import FirstItem from "./pages/FirstItem";
 import Sidebar from "./layouts/Sidebar";
-import Cover from "./components/Cover";
+import BodyBackground from "./components/BodyBackground";
 
 const NavContainer = styled.div`
   background: rgb(29, 30, 44, 0.8);
@@ -18,7 +18,7 @@ const ContentContainer = styled.div`
 export default function App() {
   return (
     <Router>
-      <Cover>
+      <BodyBackground>
         <div tw="grid grid-cols-6">
           <NavContainer>
             <Sidebar />
@@ -59,7 +59,7 @@ export default function App() {
             </ContentContainer>
           </div>
         </div>
-      </Cover>
+      </BodyBackground>
     </Router>
   );
 }
