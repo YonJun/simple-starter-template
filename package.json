@@ -1,6 +1,6 @@
 {
   "name": "simple-starter-template",
-  "homepage": "https://YonJun.github.io/simple-starter-template",
+  "homepage": ".",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
