@@ -11,6 +11,9 @@ const NavContainer = styled.div`
   background: rgb(29, 30, 44, 0.8);
   ${tw`h-full col-span-1`}
 `;
+const ContentContainer = styled.div`
+  max-width: 1000px;
+`;
 
 export default function App() {
   return (
@@ -20,7 +23,7 @@ export default function App() {
           <NavContainer>
             <Sidebar />
           </NavContainer>
-          <div tw="h-full col-span-5">
+          <ContentContainer tw="h-full col-span-5 w-full mx-auto">
             <Switch>
               <Route path="/item1">
                 <FirstItem />
@@ -32,7 +35,7 @@ export default function App() {
                 <h1>404</h1>
               </Route>
             </Switch>
-          </div>
+          </ContentContainer>
         </div>
       </Cover>
     </Router>
