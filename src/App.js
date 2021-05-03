@@ -31,7 +31,7 @@ export default function App() {
                     alt="twitter"
                     height="auto"
                     width="100%"
-                    src={`${process.env.PUBLIC_URL}/assets/images/twitter.svg`}
+                    src={`assets/images/twitter.svg`}
                   />
                 </a>
                 <a href="/#" tw="inline-block py-2 px-8">
@@ -39,7 +39,7 @@ export default function App() {
                     alt="facebook"
                     height="auto"
                     width="100%"
-                    src={`${process.env.PUBLIC_URL}/assets/images/facebook.svg`}
+                    src={`assets/images/facebook.svg`}
                   />
                 </a>
               </div>

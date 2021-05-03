@@ -6,7 +6,7 @@ const BgImage = styled.div`
 
   &::after {
     content: "";
-    background-image: url("/assets/images/thumb.jpg");
+    background-image: url("assets/images/thumb.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     opacity: 0.5;
