@@ -17,11 +17,10 @@ const BgImage = styled.div`
     position: absolute;
     z-index: -1;
   }
-  ${tw`w-full min-h-screen h-auto`}
+  ${tw`w-full h-screen`}
 `;
 const Backdrop = styled.div`
-  background: rgb(5, 7, 41, 0.8);
-  ${tw`w-full min-h-screen h-auto`}
+  background: linear-gradient(rgb(5, 7, 41, 0.8), #1b1d35);
 `;
 const BodyBackground = ({ children }) => (
   <BgImage>
