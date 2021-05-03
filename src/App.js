@@ -17,7 +17,7 @@ const ContentContainer = styled.div`
 
 export default function App() {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <BodyBackground>
         <div tw="grid grid-cols-6">
           <NavContainer>
