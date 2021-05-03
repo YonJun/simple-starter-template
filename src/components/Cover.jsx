@@ -3,7 +3,7 @@ import tw, { styled } from "twin.macro";
 
 const BgImage = styled.div`
   display: block;
-  position: relative;
+
   &::after {
     content: "";
     background-image: url("/assets/images/thumb.jpg");
@@ -17,11 +17,11 @@ const BgImage = styled.div`
     position: absolute;
     z-index: -1;
   }
-  ${tw`w-full h-screen`}
+  ${tw`w-full min-h-screen h-auto`}
 `;
 const Backdrop = styled.div`
   background: rgb(5, 7, 41, 0.8);
-  ${tw`w-full h-full`}
+  ${tw`w-full min-h-screen h-auto`}
 `;
 const Cover = ({ children }) => (
   <BgImage>

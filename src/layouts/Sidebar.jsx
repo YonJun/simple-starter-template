@@ -31,7 +31,7 @@ const Li = styled.li`
 const Sidebar = () => {
   return (
     <Fragment>
-      <Container tw="flex flex-col justify-between h-full lg:w-10/12  text-center">
+      <Container tw="flex flex-col justify-between h-screen lg:w-10/12  text-center sticky top-0 left-0">
         <nav>
           <ul tw="text-white uppercase font-semibold">
             <li tw="my-14 font-black text-2xl">
