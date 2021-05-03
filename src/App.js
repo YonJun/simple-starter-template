@@ -1,7 +1,7 @@
 /** @jsxImportSource @emotion/react */
 import tw, { styled } from "twin.macro";
 import "./App.css";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import FirstItem from "./pages/FirstItem";
 import Sidebar from "./layouts/Sidebar";
